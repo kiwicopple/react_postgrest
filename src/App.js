@@ -19,14 +19,15 @@ const App = () => {
             });
         client
             .from('omega')
-            .match({
-                id: '15f65a8a-3d84-4a64-add6-d00bb1b698c4'
-            })
+            // .match({
+            //     id: 'ki'
+            // })
             .update({
                 username: 'applast modified'
             }, {
                 bulk: false
-            }).then(res => {
+            })
+            .then(res => {
                 console.log(res);
             }).catch(e => {
                 console.log(e);
